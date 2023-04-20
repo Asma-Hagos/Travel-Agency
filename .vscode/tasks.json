@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "purgecss",
+        "type": "shell",
+        "command": "purgecss --css css/main.css --content index.html --output ./dist/",
+        "problemMatcher": []
+      }
+    ]
+  }
+  
