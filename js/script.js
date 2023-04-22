@@ -418,24 +418,20 @@ function is_mobile_device() {
 /**/
 function video_img() {
   if (is_mobile_device()) {
-    var video_url = $(".row_bg_video").attr("data-video-url");
+    var img_url = $(".row_bg_video").attr("data-img-url");
 
-    // Replace background image with video element
+    // Replace background image with image element
     $(".row_bg_video")
       .css({
-        "background-image": "none",
+        "background-image": "url(" + img_url + ")",
       })
-      .html(
-        '<video autoplay muted loop><source src="' +
-          video_url +
-          '" type="video/mp4"></video>'
-      );
+      .html("");
 
-    // Resize video element to fit container
-    var video = $(".row_bg_video video");
-    var el_width = $(".row_bg_video").width();
+    // Resize image element to fit container
+    var image = $(".row_bg_video");
+    var el_width = image.width();
     var el_height = (el_width / 16) * 9;
-    video.width(el_width).height(el_height);
+    image.height(el_height);
   } else {
     // For non-mobile devices, remove the background image and show all child elements
     $(".row_bg_video").css({
