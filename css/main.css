@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------
 
     Template Name: Suntour
@@ -320,7 +321,8 @@ ins.alt-5 {
 }
 
 .color-g2 {
-    color: #a9b5c1;
+    color: #ffff;
+    font-weight: 600;
 }
 
 .color-white {
@@ -583,7 +585,7 @@ h3 span {
 }
 
 .bg-main {
-    background:#ffc107 ;
+    background:#2c61f3b8 ;
 }
 
 .bg-main-40:before {
@@ -848,7 +850,6 @@ footer a img {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    border-bottom: 2px solid #0345fc;
     padding-bottom: 15px;
 }
 
@@ -6971,7 +6972,7 @@ body .tparrows {
     top: 50%;
     text-align: center;
     z-index: -1;
-    color: #f2b90f;
+    color: #0345fc;
     font-size: 100px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -8502,11 +8503,14 @@ aside .owl-single-item .pic img {
 footer.footer {
     color: #ffffff;
     font-size: 15px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: #383e44;
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 100px;
+    
+    
 }
 
 footer.footer h4 {
